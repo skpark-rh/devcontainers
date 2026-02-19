@@ -1,0 +1,9 @@
+[submodule "pytorch"]
+	path = pytorch
+	url = git@github.com:skpark-rh/pytorch.git
+[submodule "ray"]
+	path = ray
+	url = git@github.com:skpark-rh/ray.git
+[submodule "devspark"]
+	path = devspark
+	url = git@github.com:skpark-rh/devspark.git
