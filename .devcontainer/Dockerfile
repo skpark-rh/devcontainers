@@ -169,6 +169,10 @@ RUN echo "build --local_ram_resources=HOST_RAM*.5 --local_cpu_resources=25 --dis
 # install claude
 RUN curl -fsSL https://claude.ai/install.sh | bash
 
+# Ensure all executables have +x permissions before ownership change
+RUN find /home/devuser/miniconda/bin -type f -exec chmod +x {} + 2>/dev/null || true \
+    && find /home/devuser/.local/bin -type f -exec chmod +x {} + 2>/dev/null || true
+
 # Forcefully remove old symlinks if they exist and are not managed
 RUN rm -f /usr/bin/gcc /usr/bin/g++ && \
     ln -s /usr/bin/gcc-13 /usr/bin/gcc && \
