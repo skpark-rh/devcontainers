@@ -1,12 +1,19 @@
 [submodule "pytorch"]
 	path = pytorch
 	url = git@github.com:skpark-rh/pytorch.git
+	branch = main
 [submodule "vision"]
 	path = vision
 	url = git@github.com:skpark-rh/vision.git
+	branch = main
 [submodule "ray"]
 	path = ray
 	url = git@github.com:skpark-rh/ray.git
+	branch = master
 [submodule "devspark"]
 	path = devspark
 	url = git@github.com:skpark-rh/devspark.git
+[submodule "TestHarness"]
+	path = TestHarness
+	url = git@github.com:skpark-rh/TestHarness
+	branch = main
